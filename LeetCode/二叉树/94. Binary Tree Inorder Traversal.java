@@ -34,7 +34,7 @@ class Solution {
             list.add(cur.val);
             cur = cur.right;
         }
-        
+
         return list;
     }
 }
