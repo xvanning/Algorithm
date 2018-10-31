@@ -22,7 +22,7 @@ class Solution {
             if(used[i]){
                 continue;
             }
-            if(i != 0 && nums[i - 1] == nums[i] && used[i - 1] == true){ //重复的跳过
+            if(i != 0 && nums[i - 1] == nums[i] && used[i - 1] == false){ //重复的跳过
                 continue;
             }
             used[i] = true;
