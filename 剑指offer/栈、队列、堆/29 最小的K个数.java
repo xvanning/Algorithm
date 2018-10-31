@@ -62,10 +62,12 @@ public class Solution {
         }
         return nums[l];
     }
+    // 对arr[l...r]部分进行partition操作
+    // 返回p, 使得arr[l...p-1] < arr[p] ; arr[p+1...r] > arr[p]
     public int partition(int [] nums, int l, int r){
         swap(nums, l, (int)(Math.random() * ( r - l + 1)) + l );
         int v = nums[l];
-        int j = l;
+        int j = l; // arr[l+1...j] < v ; arr[j+1...i) > v
         for(int i = l + 1; i <= r; i ++){
             if(nums[i] < v){
                 j ++;

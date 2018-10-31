@@ -1,3 +1,4 @@
+//动态规划。对应leetcode 53
 //定义一个数组，dp[]，dp[i]以第i个元素为结尾的一段最大子序和。
 //求dp[i]时，假设前面dp[0]~dp[i-1]都已经求出来了，dp[i-1]表示的是以i-1为结尾的最大子序和，
 //若dp[i-1]小于0，则dp[i]加上前面的任意长度的序列和都会小于不加前面的序列（即自己本身一个元素是以自己为结尾的最大自序和）。
@@ -22,40 +23,3 @@ public class Solution {
         return maxSum;
     }
 }
-
-//法2：
-class Solution {
-    public int maxSubArray(int[] nums) {
-        if (nums.length == 0){
-            return 0;
-        }
-        int res = nums[0];
-        int sum = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            sum = Math.max(nums[i], sum + nums[i]);
-            res = Math.max(res,sum);
-        }
-        return res;
-    }
-}
-
-//法3：
-class Solution {
-    public int maxSubArray(int[] nums) {
-        if (nums.length == 0){
-            return 0;
-        }
-        int res = Integer.MIN_VALUE;
-        int sum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (sum <= 0){
-                sum = nums[i];
-            }else {
-                sum += nums[i];
-            }
-            res = Math.max(res,sum);
-        }
-        return res;
-    }
-}
-

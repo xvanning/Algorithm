@@ -1,17 +1,17 @@
-//动态规划，对应leetcode 264 Ugly Number II;
-public class Solution {
-    public int GetUglyNumber_Solution(int index) {
-        if (index < 1) {
+//对应剑指offer 33 丑数
+class Solution {
+    public int nthUglyNumber(int n) {
+        if (n < 1) {
             return 0;
         }
-        if (index <= 6) {
-            return index;
+        if (n <= 6) {
+            return n;
         }
 
-        int[] dp = new int[index];
+        int[] dp = new int[n];
         dp[0] = 1;
         int i2 = 0, i3 = 0, i5 = 0;
-        for (int i = 1; i < index; i++) {
+        for (int i = 1; i < n; i++) {
             int next2 = dp[i2] * 2;
             int next3 = dp[i3] * 3;
             int next5 = dp[i5] * 5;
@@ -26,6 +26,6 @@ public class Solution {
                 i5++;
             }
         }
-        return dp[index - 1];
+        return dp[n - 1];
     }
 }
