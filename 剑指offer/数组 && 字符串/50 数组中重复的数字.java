@@ -63,7 +63,6 @@ public class Solution {
         for (int key: map.keySet()){
             if (map.get(key) > 1){
                 duplication[0] = key;
-                System.out.println("return true");
                 return true;
             }
         }
