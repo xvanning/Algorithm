@@ -1,4 +1,4 @@
-//与26题形成对比通解。
+//与80题形成对比通解。
 class Solution {
     public int removeDuplicates(int[] nums) {
         int i = 0;
