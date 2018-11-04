@@ -1,5 +1,5 @@
 public class Solution {
-    public static final int[][] next = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+    public static final int[][] next = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
     public boolean[][] visited;
     int res = 0;
 
@@ -13,7 +13,7 @@ public class Solution {
                 if (i > threshold || j > threshold) {
                     break;
                 }
-                //System.out.println("Outer Loop: " + " curI: " + i + " ,curJ: " + j);
+                // System.out.println("Outer Loop: " + " curI: " + i + " ,curJ: " + j);
                 if (!visited[i][j] && threshold >= digitSum(i, j)) {
                     backTracking(threshold, rows, cols, i, j);
                 }
@@ -27,13 +27,14 @@ public class Solution {
             return;
         }
         if (threshold >= digitSum(x, y)) {
-            //System.out.println("curRes: " + res);
+            // System.out.println("curRes: " + res);
             res++;
             visited[x][y] = true;
             for (int i = 0; i < 4; i++) {
                 int newX = x + next[i][0];
                 int newY = y + next[i][1];
-                //System.out.println("Inner Loop: " + " curX: " + x + " ,curY: " + y + " ,newX: " + newX + " ,newY: " + newY);
+                // System.out.println("Inner Loop: " + " curX: " + x + " ,curY: " + y + " ,newX:
+                // " + newX + " ,newY: " + newY);
                 if (isInArea(newX, newY, rows, cols) && !visited[newX][newY] && threshold >= digitSum(newX, newY)) {
                     backTracking(threshold, rows, cols, newX, newY);
                 }

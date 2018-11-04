@@ -22,7 +22,7 @@ public class Solution {
 
             num1 = sum;
             num2 = carry;
-        }while(num2 != 0);
+        }while(num2 != 0); //do while循环参考剑指offer 55
             return num1;
     }
 }
