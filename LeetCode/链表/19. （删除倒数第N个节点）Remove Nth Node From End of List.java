@@ -8,6 +8,7 @@
  *     ListNode(int x) { val = x; }
  * }
  */
+//参考剑指offer 14
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {
         ListNode fast = head;
@@ -16,7 +17,7 @@ class Solution {
             fast = fast.next;
         }
         if (fast == null){
-            return head.next;
+            return head.next; //如果n和链表长度一样，就是删除头节点。返回头节点的下一个。
         }
         while (fast.next != null){
             fast = fast.next;

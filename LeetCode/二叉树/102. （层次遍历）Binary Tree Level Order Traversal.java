@@ -14,29 +14,33 @@ import java.util.Queue;
  * }
  */
 class Solution {
+    List<List<Integer>> ret = new ArrayList<>();
+
     public List<List<Integer>> levelOrder(TreeNode root) {
+        if(root == null){
+            return ret;
+        }
+
         Queue<TreeNode> queue = new LinkedList<>();
-        List<List<Integer>> lists = new ArrayList<>();
-        if (root == null){
-            return lists;
-        }
-        
-        queue.offer(root);
-        while (!queue.isEmpty()) {
-            ArrayList<Integer> subList = new ArrayList<>();
-            int levelNum = queue.size();
-            for (int i = 0; i < levelNum; i++) {
-                if (queue.peek().left != null){
-                    queue.offer(queue.peek().left);
+        queue.add(root);
+        while(!queue.isEmpty()){
+            int cnt = queue.size();
+            ArrayList<Integer> list = new ArrayList<>();
+            for(int i = 0; i < cnt; i ++){
+                TreeNode cur = queue.remove();
+                list.add(cur.val);
+                if(cur.left != null){
+                    queue.add(cur.left);
                 }
-                if (queue.peek().right != null) {
-                    queue.offer(queue.peek().right);
+                if(cur.right != null){
+                    queue.add(cur.right);
                 }
-                subList.add(queue.poll().val);
             }
-            lists.add(subList);
+            ret.add(new ArrayList<>(list));
         }
-        return lists;
+
+        return ret;
+
     }
 }
 

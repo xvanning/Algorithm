@@ -15,7 +15,15 @@ class Solution {
 }
 
 //非递归：一直先把左子树push进栈。然后pop出当前节点。cur改为当前节点的右子树。一直循环下去。
-
+/**
+ *
+ *  5
+   / \
+  1   4
+     / \
+    3   6
+ *
+ */
 import java.util.*;
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {

@@ -26,8 +26,32 @@ class Solution {
     }
 }
 
-//中序遍历（迭代）：只要在中序遍历那边修改
+//中序遍历（递归方法）：只要在中序遍历那边修改
+class Solution {
+    private TreeNode pre;
+    private boolean ret = true;
+    public boolean isValidBST(TreeNode root) {
+        if(root == null){
+            return true;
+        }
+        inOder(root);
+        return ret;
+    }
 
+    private void inOder(TreeNode root) {
+        if (root == null) {
+            return;
+        }
+        inOder(root.left);
+        if(pre != null && root.val <= pre.val) {
+            ret = false;
+        }
+        pre = root;
+        inOder(root.right);
+    }
+}
+
+//中序遍历（迭代）：只要在中序遍历那边修改
 class Solution {
     public boolean isValidBST(TreeNode root) {
       if (root == null) return true;

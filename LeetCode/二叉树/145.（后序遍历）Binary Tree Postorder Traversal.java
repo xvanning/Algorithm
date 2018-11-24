@@ -13,6 +13,16 @@ class Solution {
     }
 }
 
+
+/**
+ *
+ *  5
+   / \
+  1   4
+     / \
+    3   6
+ *
+ */
 //递归：注意比较前序和中序
 class Solution {
     public List<Integer> postorderTraversal(TreeNode root) {
@@ -53,7 +63,7 @@ class Solution {
             if(cur.right != null){
                 stack.push(cur.right);
             }
-            
+
         }
         return list;
     }

@@ -17,6 +17,14 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+//Given the sorted linked list: [-10,-3,0,5,9],
+/**
+ *    0
+     / \
+   -3   9
+   /   /
+ -10  5
+ */
 class Solution {
     public TreeNode sortedListToBST(ListNode head) {
         if (head == null) {

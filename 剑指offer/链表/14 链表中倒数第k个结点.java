@@ -26,7 +26,7 @@ public class Solution {
             //throw new RuntimeException("k的值比链表长度大");
         }
         ListNode first = head; ListNode second = head;
-        while(first != null && ((k --) > 0)){
+        for(int i = 0; i < k; i ++){
             first = first.next;
         }
         while(first != null){

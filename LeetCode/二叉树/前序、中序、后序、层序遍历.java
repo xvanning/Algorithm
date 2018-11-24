@@ -21,7 +21,7 @@ class Solution {
     }
 }
 
-//中序：
+//中序：一直先把左子树push进栈。然后pop出当前节点。cur改为当前节点的右子树。一直循环下去。
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
@@ -39,7 +39,7 @@ class Solution {
             list.add(cur.val);
             cur = cur.right;
         }
-        
+
         return list;
     }
 }
@@ -74,7 +74,7 @@ class Solution {
         if (root == null){
             return lists;
         }
-        
+
         queue.offer(root);
         while (!queue.isEmpty()) {
             ArrayList<Integer> subList = new ArrayList<>();

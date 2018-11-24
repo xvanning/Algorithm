@@ -13,6 +13,16 @@ class Solution {
     }
 }
 
+/**
+ *
+ *  5
+   / \
+  1   4
+     / \
+    3   6
+ *
+ */
+
 //非递归，三种方法。第一种方法只需要push右子树。 后两种方法都需要puhs和pop所有的节点。不推荐。
 //方法1：一直先向左子树推进，有右子树就加入到栈。效率100%
 class Solution {
@@ -61,7 +71,7 @@ class Solution {
 
 //方法3（最经典写法，可以和中序遍历一起用，只要改个位置）：一直先把左子树push进栈。然后pop出当前节点。cur改为当前节点的右子树。一直循环下去。效率比较低。
 class Solution {
-    
+
     public List<Integer> preorderTraversal(TreeNode root) {
        ArrayList<Integer> res = new ArrayList<Integer>();
         if(root == null)

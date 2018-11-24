@@ -16,24 +16,25 @@ import java.util.Queue;
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> list = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
-        if (root == null) {
+        if(root == null){
             return list;
         }
-        queue.offer(root);
-        while (!queue.isEmpty()){
-            int levelNum = queue.size();
-            for (int i = 0; i < levelNum; i++) {
-                if (i == 0){
-                    list.add(queue.peek().val); //这一句比较关键。
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            int cnt = queue.size();
+            for(int i = 0; i < cnt; i ++){
+                TreeNode cur = queue.remove();
+                if(i == 0){
+                    list.add(cur.val);
                 }
-                if (queue.peek().right != null){
-                    queue.offer(queue.peek().right);
+                if(cur.right != null){
+                    queue.add(cur.right);
                 }
-                if (queue.peek().left != null){
-                    queue.offer(queue.peek().left);
+                if(cur.left != null){
+                    queue.add(cur.left);
                 }
-                queue.poll(); //出队
+
             }
         }
         return list;

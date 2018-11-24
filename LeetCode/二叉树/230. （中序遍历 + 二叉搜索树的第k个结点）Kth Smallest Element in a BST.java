@@ -1,4 +1,35 @@
-//先计算左子树的节点个数，如果左子树节点 + 1刚好等于K,说明刚好就是根节点为返回值。否则小于的话，在左子树递归。大于的话在右子树递归。
+//剑指offer 62 最优解。
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    private TreeNode ret;
+    private int cnt = 0;
+    public int kthSmallest(TreeNode root, int k) {
+        inOder(root, k);
+        return ret.val;
+    }
+    private void inOder(TreeNode node, int k) {
+        if (node == null) {
+            return;
+        }
+        inOder(node.left, k);
+        cnt++;
+        if (cnt == k) {
+            ret = node;
+        }
+        inOder(node.right, k);
+    }
+}
+
+//先计算左子树的节点个数，如果左子树节点 + 1刚好等于K,说明刚好就是根节点为返回值。
+//否则小于的话，在左子树递归。大于的话在右子树递归。
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -20,7 +51,7 @@ class Solution {
             return root.val;
         }
     }
-    
+
      public int countNodes(TreeNode root) {
         if (root == null) {
             return 0;
@@ -49,7 +80,7 @@ class Solution {
         }
         Stack<TreeNode> stack = new Stack<>();
         TreeNode cur = root;
-        
+
         while(cur != null || !stack.isEmpty()){
             while(cur != null){
                 stack.push(cur);
