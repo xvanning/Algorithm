@@ -1,7 +1,7 @@
 class BubbleSort {
     public void bubbleSort(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {// -1为了防止溢出
+            for (int j = 0; j < arr.length - i - 1; j++) {// -1为了防止溢出，-i是每次都少进行一次操作
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
                 }
