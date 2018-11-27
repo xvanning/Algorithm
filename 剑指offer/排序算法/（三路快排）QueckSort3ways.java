@@ -18,9 +18,9 @@ public class QuickSort3Ways {
 
         int v = arr[l];
 
-        int lt = l;     // arr[l+1...lt] < v
+        int lt = l; // arr[l+1...lt] < v
         int gt = r + 1; // arr[gt...r] > v
-        int i = l + 1;    // arr[lt+1...i) == v
+        int i = l + 1; // arr[lt+1...i) == v
         while (i < gt) {
             if (arr[i] < v) {
                 lt++;
