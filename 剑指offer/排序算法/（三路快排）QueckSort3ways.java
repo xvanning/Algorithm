@@ -14,24 +14,26 @@ public class QuickSort3Ways {
         }
 
         // 随机在arr[l...r]的范围中, 选择一个数值作为标定点pivot
-        swap(arr, l, (int) (Math.random() * (r - l + 1)) + 1);
+        swap(arr, l, (int) (Math.random() * (r - l + 1)) + l);
+
         int v = arr[l];
 
-        int lt = l; // arr[l+1...lt] < v
+        int lt = l;     // arr[l+1...lt] < v
         int gt = r + 1; // arr[gt...r] > v
-        int i = l + 1; // arr[lt+1...i) == v
+        int i = l + 1;    // arr[lt+1...i) == v
         while (i < gt) {
             if (arr[i] < v) {
-                swap(arr, i, lt + 1);
                 lt++;
+                swap(arr, i, lt);
                 i++;
             } else if (arr[i] > v) {
-                swap(arr, i, gt - 1);
                 gt--;
+                swap(arr, i, gt);
             } else { // arr[i] == v
                 i++;
             }
         }
+
         swap(arr, l, lt);
 
         sort(arr, l, lt - 1);
@@ -43,5 +45,4 @@ public class QuickSort3Ways {
         arr[i] = arr[j];
         arr[j] = t;
     }
-
 }
