@@ -86,9 +86,9 @@ public class Singleton {
         private Singleton Singleton;
 
         // jvm保证这个函数只执行一次
-    private Singletonenum(){
+         private Singletonenum(){
         Singleton = new Singleton;
-    }
+        }
 
         public Singleton getSingleton() {
             return Singleton;
