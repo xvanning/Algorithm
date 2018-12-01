@@ -27,7 +27,7 @@ public class Solution {
         while(!queue.isEmpty()){
             ArrayList<Integer> list = new ArrayList<>();
             int cnt = queue.size(); //和22题的不同之处，就是记录队列的大小，当作每一行。
-            while(cnt > 0){
+            for(int i = 0; i < cnt; i ++){
                 TreeNode cur = queue.remove();
                 list.add(cur.val);
                 if(cur.left != null){
@@ -36,7 +36,7 @@ public class Solution {
                 if(cur.right != null){
                     queue.add(cur.right);
                 }
-                cnt --;
+
             }
             ret.add(new ArrayList<>(list));
         }
