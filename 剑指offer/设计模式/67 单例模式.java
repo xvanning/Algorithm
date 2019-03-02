@@ -58,11 +58,11 @@ public class Singleton {
 
     // 静态内部类
     private static class SingletonHolder{
-        private static final Singleton.INSTANCE = new Singleton();
+        private static final Singleton INSTANCE = new Singleton();
     }
 
     public static Singleton getSingleton() {
-        return Singleton.INSTANCE;
+        return SingletonHolder.INSTANCE;
     }
 
 }
