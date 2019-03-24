@@ -22,8 +22,6 @@ class Solution {
     }
 }
 
-
-
 // 变形题，要打印全部的公共子序列
 public class Main {
 
@@ -34,7 +32,6 @@ public class Main {
         int max = longestCommonSequence(s1, s2);
         System.out.println(max);
     }
-
 
     public static int longestCommonSequence(String s1, String s2) {
         if (s1 == null || s2 == null) {
@@ -76,17 +73,17 @@ public class Main {
         }
         int curDir = direction[i][j];
         switch (curDir) {
-            case 1 :
+            case 1:
                 lcs = lcs + s1.charAt(i - 1);
                 printSubSequence(direction, s1, lcs, maxLen, i - 1, j - 1);
                 break;
-            case 2 :
+            case 2:
                 printSubSequence(direction, s1, lcs, maxLen, i - 1, j);
                 break;
-            case 3 :
+            case 3:
                 printSubSequence(direction, s1, lcs, maxLen, i, j - 1);
                 break;
-            case 4 :
+            case 4:
                 printSubSequence(direction, s1, lcs, maxLen, i - 1, j);
                 printSubSequence(direction, s1, lcs, maxLen, i, j - 1);
                 break;
