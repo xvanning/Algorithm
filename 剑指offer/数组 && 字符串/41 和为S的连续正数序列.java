@@ -4,7 +4,7 @@ public class Solution {
     public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
         ArrayList<ArrayList<Integer>> ret = new ArrayList<>();
         int l = 1; int r = 2;
-        while(l < sum / 2>){
+        while(l < sum / 2){
             int curSum = ((l + r) * (r - l + 1)) / 2;
             if(curSum == sum){
                 ArrayList<Integer> list = new ArrayList<>();

@@ -14,7 +14,7 @@ public class TreeNode {
 //简单题。左右深度取最大值
 public class Solution {
     public int TreeDepth(TreeNode root) {
-        if(roo == null){
+        if(root == null){
             return 0;
         }
         int leftDepth = TreeDepth(root.left);
