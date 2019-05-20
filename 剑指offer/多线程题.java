@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2019 Baidu, Inc. All Rights Reserved.
- */
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
