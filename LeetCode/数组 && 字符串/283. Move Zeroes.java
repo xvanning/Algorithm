@@ -2,6 +2,14 @@
 // 时间复杂度: O(n)
 // 空间复杂度: O(1)
 
+/**
+ *
+ *很简单一道题，直接双指针，k指针永远要指向0，
+ * i遍历，如果遇到为零的，K不动，I++
+ * 如果遇到不为零的，和K指针所指元素交换。然后K++，I++
+ * @param nums
+ */
+
 class Solution {
     public void moveZeroes(int[] nums) {
         if (nums.length == 0) {
