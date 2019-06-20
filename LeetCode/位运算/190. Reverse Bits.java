@@ -1,7 +1,8 @@
 /**
  * 我们只需要把要翻转的数从右向左一位位的取出来，
  * 如果取出来的是1，我们将结果res左移一位并且加上1；
- * 如果取出来的是0，我们将结果res左移一位，然后将n右移一位即可
+ * 如果取出来的是0，我们将结果res左移一位，
+ * 然后将n右移一位即可
  */
 public class Solution {
     // you need treat n as an unsigned value
