@@ -56,16 +56,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="15 反转链表.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/剑指offer/链表/15 反转链表.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="16合并两个排序的链表 .java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="16合并两个排序的链表 .java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/剑指offer/链表/16合并两个排序的链表 .java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="2">
               <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ip与int互转.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LeetCode/数组 &amp;&amp; 字符串/ip与int互转.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -93,7 +97,7 @@
       <file leaf-file-name="多线程题.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/剑指offer/多线程题.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="650">
               <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,8 +112,8 @@
         <entry file="file://$PROJECT_DIR$/剑指offer/面试总结.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="273">
-                <caret line="181" column="27" lean-forward="true" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
+              <first_editor relative-caret-position="4525">
+                <caret line="181" column="27" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -202,9 +206,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,18 +223,19 @@
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="剑指offer" type="462c0819:PsiDirectoryNode" />
+              <item name="LeetCode" type="462c0819:PsiDirectoryNode" />
+              <item name="数组 &amp;&amp; 字符串" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
               <item name="剑指offer" type="462c0819:PsiDirectoryNode" />
-              <item name="链表" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,11 +267,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\documents\CSlearning\Algorithm\LeetCode\动态规划" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/LeetCode/动态规划" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\documents\CSlearning\Algorithm\LeetCode\数组 &amp;&amp; 字符串" />
+      <recent name="E:\documents\CSlearning\Algorithm\LeetCode\动态规划" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -388,12 +393,13 @@
       <workItem from="1569581673495" duration="773000" />
       <workItem from="1569669703959" duration="1156000" />
       <workItem from="1569720725419" duration="7723000" />
-      <workItem from="1570071479698" duration="242000" />
+      <workItem from="1570071479698" duration="748000" />
+      <workItem from="1570786221289" duration="267000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58487000" />
+    <option name="totallyTimeSpent" value="59260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,7 +411,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1721" height="935" extended-state="7" />
+    <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32876712" />
@@ -417,10 +424,10 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31912145" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31912145" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23992784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24293445" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -478,11 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/剑指offer/数组 &amp;&amp; 字符串/43 左旋转字符串.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/剑指offer/数组 &amp;&amp; 字符串/44 翻转单词顺序列.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150" />
@@ -712,7 +714,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/剑指offer/多线程题.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="650">
           <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -725,8 +727,8 @@
     <entry file="file://$PROJECT_DIR$/剑指offer/面试总结.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="273">
-            <caret line="181" column="27" lean-forward="true" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
+          <first_editor relative-caret-position="4525">
+            <caret line="181" column="27" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>
@@ -737,8 +739,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/剑指offer/链表/16合并两个排序的链表 .java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="2">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeetCode/数组 &amp;&amp; 字符串/ip与int互转.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="35" lean-forward="true" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>
