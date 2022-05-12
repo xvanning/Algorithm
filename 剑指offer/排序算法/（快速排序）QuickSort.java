@@ -22,7 +22,9 @@ class Solution{
         for(int i = l + 1; i <= r; i ++){
             if(arr[i] < v){
                 j ++;
-                swap(arr, i, j);
+                if(i != j) {
+                    swap(arr, i, j);
+                } 
             }
         }
         swap(arr, l, j);
